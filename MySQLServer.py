@@ -13,7 +13,7 @@ def create_database():
         if connection.is_connected():
             cursor = connection.cursor()
             # Create database if it doesn't exist
-            cursor.execute("CREATE DATABASE IF NOT alx_book_store")
+            cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
             print("Database 'alx_book_store' created successfully")
     except Error as e:
         print(f"Error while connectingto MYSQL: {e}")
