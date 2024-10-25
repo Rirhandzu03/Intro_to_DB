@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS Customers(
     customer_name VARCHAR(215) NOT NULL,
     email VARCHAR(215) UNIQUE NOT NULL,
     phone VARCHAR(20),
-    address VARCHAR(255)
+    address TEXT
 );
 
 -- Create the orders table
