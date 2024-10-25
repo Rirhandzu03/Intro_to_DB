@@ -35,10 +35,10 @@ CREATE TABLE IF NOT EXISTS Orders(
     customer_id INT,
     order_date DATETIME DEFAULT CURRENT_TIMESTAMP,
     total_amount DECIMAL(10, 2) NOT NULL,
-    FOREIGN KEY(customer_id) REFERENCES customers(customer_id) ON DELETE CASCADE
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id) ON DELETE CASCADE
 );
 
--- Create order details
+-- Create order details table
 CREATE TABLE IF NOT EXISTS order_details(
     order_detail_id INT AUTO_INCREMENT PRIMARY KEY,
     order_id INT,
